@@ -130,6 +130,7 @@ h1{
     box-sizing: border-box;
     margin: 0 auto; /* Center the form horizontally */
     width: 80%; /* Adjust the width as needed */
+    font-size: medium;
 }
 
 h1 {
