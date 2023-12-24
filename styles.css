@@ -1,0 +1,122 @@
+button{
+    border: 1px solid #fff;
+    display: flex;
+    padding: 0;
+    cursor: pointer;
+}
+
+h1{
+    border: 1px solid rgb(255, 255, 255);
+    justify-content: flex-start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0%;
+    display: inline-flex;
+    background-color: aqua;
+} 
+
+.admin{
+    font-size: larger;
+    padding-top: 10%;
+    margin-left: 5%;
+}
+ 
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.menu div {
+    flex-basis: 30%; /* Adjust the width based on your design */
+    margin-bottom: 1px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .menu img {
+    width: 100%;
+    height: auto;
+  }
+
+  body, h1, p {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  /* Add your custom styling here */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 200%;
+  }
+
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+    padding: 0%;
+    border: #333;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .loguitknop {
+    background-color: #e01109;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100%;
+  }
+
+  .log-uit{
+    background-color: #e01109;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100%;
+  }
+
+  .keer-terug{
+    background-color: #007500;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100%;
+  }
+
+  .loginknop{
+    background-color: #007500;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100%;
+  }
