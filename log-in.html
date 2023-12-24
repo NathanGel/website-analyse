@@ -68,9 +68,10 @@
     </style>
 </head>
 <body>
+<body>
     <div class="login-container">
         <h2>Login</h2>
-        <form class="login-form" action="index.html" method="post">
+        <form class="login-form" onsubmit="redirectToIndex()">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -82,5 +83,13 @@
             <button type="submit" class="login-button">Login</button>
         </form>
     </div>
+
+    <script>
+        function redirectToIndex() {
+            window.location.href = "index.html";
+            return false; // Prevents the form from submitting in the traditional way
+        }
+    </script>
+</body>
 </body>
 </html>
