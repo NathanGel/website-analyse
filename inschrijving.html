@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inschrijving</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="Icon" href="hogent-logo-klein - Copy.png" type="image/x-icon">
 </head>
 <body>
+  <style>
+    
+  </style>
     <header>
-        <button class="logo" onclick="window.location.href='index.html'"><img src="hogent-logo-klein - Copy.png" alt=""></button>        <nav>
+        <button class="logo" onclick="window.location.href='index.html'"><img src="images/hogent-logo-klein - Copy.png" alt=""></button>        <nav>
           <a href="opleidingen.html">Opleidingen</a>
           <a href="vakken.html">vakken</a>
           <a href="lessen.html">Lessen</a>
@@ -19,5 +21,49 @@
         </nav>
         <button class="loguitknop" onclick="window.location.href='log-uit.html'">Log uit</button>
       </header>
+      <form action="/verwerk_formulier.php" method="post" enctype="multipart/form-data">
+        <!-- Naam -->
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" required>
+
+        <!-- Geboortedatum -->
+        <label for="geboortedatum">Geboortedatum:</label>
+        <input type="date" id="geboortedatum" name="geboortedatum" required>
+
+        <!-- Adres -->
+        <label for="adres">Adres:</label>
+        <textarea id="adres" name="adres" required></textarea>
+
+        <!-- Rijksregister Nummer -->
+        <label for="rijksregister">Rijksregister Nummer:</label>
+        <input type="text" id="rijksregister" name="rijksregister" required>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Telefoonnummer -->
+        <label for="telefoon">Telefoonnummer:</label>
+        <input type="tel" id="telefoon" name="telefoon" required>
+
+        <!-- Hoogst Behaalde Diploma -->
+        <label for="diploma">Hoogst Behaalde Diploma:</label>
+        <input type="text" id="diploma" name="diploma" required>
+
+        <!-- Geslacht -->
+        <label>Geslacht:</label>
+        <input type="radio" id="man" name="geslacht" value="Man" required>
+        <label for="man">Man</label>
+        <input type="radio" id="vrouw" name="geslacht" value="Vrouw" required>
+        <label for="vrouw">Vrouw</label>
+
+        <!-- Documenten uploaden -->
+        <label for="documenten">Documenten Uploaden:</label>
+        <input type="file" id="documenten" name="documenten" accept=".pdf, .doc, .docx">
+
+        <!-- Verzendknop -->
+        <input type="submit" value="Opslaan">
+
+    </form>
 </body>
 </html>
