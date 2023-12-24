@@ -120,3 +120,45 @@ h1{
     cursor: pointer;
     font-size: 100%;
   }
+
+  .form {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the form horizontally */
+    width: 80%; /* Adjust the width as needed */
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 40%;
+}
+
+input,
+textarea,
+select {
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    margin-left: 40%;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
